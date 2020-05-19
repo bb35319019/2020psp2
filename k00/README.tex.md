@@ -35,10 +35,10 @@ l.40: 最小値min_valを出力
 ## 出力結果
 
 ```
-input the filename of sample:../sample/heights_male.csv
+iinput the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-Highest: 183.870000
-Lowest: 167.830000
+Highest: 183.870
+Lowest: 167.830
 ```
 
 ## 修正履歴

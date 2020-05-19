@@ -36,8 +36,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("Highest: %f\n",max_val);
-    printf("Lowest: %f\n",min_val);
+    printf("Highest: %6.3f\n",max_val);
+    printf("Lowest: %6.3f\n",min_val);
 
     return 0;
 }
