@@ -7,11 +7,12 @@ extern double p_stdnorm(double z);
 
 int main(void)
 {
-    double val;
+    double val,A,B;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    double L1=1,L2=1;
+    double max_val=1,min_val=1;
+    double mu_A=170.8,sigma_A=5.43,mu_B=169.7,sigma_B=5.5;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -26,12 +27,11 @@ int main(void)
 
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
-
-
-    
-
-
-
+        A=(val - mu_A)/sigma_A;
+        B=(val - mu_B)/sigma_B;
+        max_val=max_val*p_stdnorm(A);
+        min_val=min_val*p_stdnorm(B);
+        
     }
 
     if(fclose(fp) == EOF){
