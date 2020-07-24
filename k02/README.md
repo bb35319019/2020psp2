@@ -29,4 +29,12 @@ Likelihood for B：
 ```
 
 ## 修正履歴
-
+[comment #20200724]
+- このファイルの最初の部分は自分の学籍番号, 氏名に書き換えてください. 
+- ソースコードの説明と出力結果を書いてください.
+- l.15 `mu_A`などは変数ではなく, 定数なので `double` ではなく `const double` にした方が良いです. (もしくは `#define`)
+- 変数名ですが,  
+max_val, min_valではなく,  
+L_A, L_Bとか  
+likelihood_A, likelihood_Bとか  
+にした方が良いかと思います.
