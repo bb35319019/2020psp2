@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319019 木村祥大
 
 ## 課題
 
@@ -43,17 +43,22 @@ $$u^2=\dfrac{1}{N-1}\sum_{i=1}^{N}\left(x_{i}-\bar{x}\right)^2=\dfrac{N}{N-1}s^2
 
 ## ソースコードの説明
 
-あいうえお
+l.24 標本の平均を求める
+l.25 標本の二乗されたデータの平均を求める
+l.26 標本の分散を求める
+l.29 母集団の平均を求める
+l.30 母集団の分散を求める
+l.31 標準誤差を求める
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
+Average=173.89
+Var=25.36
+Suitei_average=173.89,std_err=1.90
+Suitei_var=28.98
 ```
 
 ## 修正履歴
