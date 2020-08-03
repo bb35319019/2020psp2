@@ -38,3 +38,20 @@ max_val, min_valではなく,
 L_A, L_Bとか  
 likelihood_A, likelihood_Bとか  
 にした方が良いかと思います.
+
+[comment #20200804 sonoda]
+- 関数の中に数字を書くのは可能な限りやめましょう．
+- main関数の宣言部で
+  ```
+  double mu_A=170.8,sigma_A=5.43,mu_B=169.7,sigma_B=5.5;
+  ```
+  と書く代わりに，ソースコード冒頭で
+  ```
+  #define mu_A 170.8
+  #define sigma_A 5.43
+  #define mu_B 169.7
+  #define sigma_B 5.5
+  ```
+  などとします．使うときは同じように使えます．
+- 直しておいてください．いちおうOKとします．課題2完了！
+  
