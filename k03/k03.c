@@ -21,7 +21,9 @@ int main(int argc, char* argv[])
     double dummy;
 
 
-
+sscanf(argv[1],"%lf",&mu);
+sscanf(argv[2],"%lf",&sigma);
+sscanf(argv[3],"%d",&num_dummy);
 
 
     printf("============================================\n");
@@ -36,6 +38,8 @@ int main(int argc, char* argv[])
         dummy = mu + sigma * r_stdnorm();
         printf("%5.2lf\n",dummy);
     }
+
+
 
     return EXIT_SUCCESS;
 }
