@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 int main(void){
-    double val,ave=0,std_err,average,var,Suitei_average,Suitei_var,ave2=0;
+    double val,ave=0,std_err,average,var,ave_online,var_online,ave2=0;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -26,9 +26,9 @@ int main(void){
         var=ave2-ave*ave;
     }
     average=ave;
-    Suitei_average=average;
-    Suitei_var=n*var/(n-1);
-    std_err=pow(Suitei_var/n,0.5);
+    ave_online=average;
+    var_online=n*var/(n-1);
+    std_err=pow(var_online/n,0.5);
     if(fclose(fp)==EOF){
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
@@ -36,6 +36,6 @@ int main(void){
     printf("Average=%.2lf\n",average);
     printf("Var=%.2lf\n",var);
     printf("Suitei_average=%.2lf,std_err=%.2lf\n",average,std_err);
-    printf("Suitei_var=%.2lf\n",Suitei_var);
+    printf("Suitei_var=%.2lf\n",var_online);
     return 0;
 }
