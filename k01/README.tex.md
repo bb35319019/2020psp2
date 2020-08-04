@@ -63,4 +63,5 @@ Suitei_var=28.98
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200804 sonoda]
+- 結果は正しい答えを出力していますが，ave_onlineやvar_onlineという関数を使ってください．
