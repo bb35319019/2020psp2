@@ -65,3 +65,22 @@ Suitei_var=28.98
 
 [comment #20200804 sonoda]
 - 結果は正しい答えを出力していますが，ave_onlineやvar_onlineという関数を使ってください．
+
+[comment #20200804-2 sonoda]
+- ave_onlineやvar_onlineは変数でなく，関数を作りましょう．
+  main関数の外に，
+  ```
+  double ave_online(double val, double ave_old, int n)
+  {
+    double ave_new;
+    ave_new = (n-1)*ave_old + val;
+    ave_new = ave_new/n;
+    return ave_new;
+  }
+  ``
+  という関数を書いて，main関数の該当の箇所で，
+  ```
+  ave = ave_online(val, ave, n);
+  ```
+  などと，呼び出して使います．
+  
