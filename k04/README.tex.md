@@ -1,6 +1,6 @@
 # 課題4 レポート
 
-aa83988848 薗田光太郎
+bb35319019 木村祥大
 
 ## 課題
 
@@ -12,30 +12,28 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
+l26~39 性別と身長がもともと入っていたファイルから構造体内に格納。
+l45~54 IDがもともと入っていたファイルから構造体内に格納。
+l55~79 IDを聞きもしデータがあるなら性別と身長を表示しなければNo Dateと表示する。
 
 ## 入出力結果
 
-例えば，ID 45313125のデータを調べたいとき，
-
-```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313125
+input the filename of sample heights ?:../sample/heights.csv
+the filename of sample heigths: ../sample/heights.csv
+input the filename of sample ID ?:../sample/IDs.csv
+the filename of sample ID: ../sample/IDs.csv
+Which ID's date do you want?:45313125
 ---
-ID : 45313125
-gender : Female
-height : 152.4
-```
-
-例えば，ID 45313124のデータを調べたいとき，
-
-```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313124
+ID:45313125
+gender:Female
+heights:152.40
+input the filename of sample heights ?:../sample/heights.csv
+the filename of sample heigths: ../sample/heights.csv
+input the filename of sample ID ?:../sample/IDs.csv
+the filename of sample ID: ../sample/IDs.csv
+Which ID's date do you want?:71240081
 ---
-No data
-```
+No Date
 
 ## 修正履歴
 
