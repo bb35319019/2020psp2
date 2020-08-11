@@ -17,7 +17,7 @@ l45~54 IDがもともと入っていたファイルから構造体内に格納�
 l55~79 IDを聞きもしデータがあるなら性別と身長を表示しなければNo Dateと表示する。
 
 ## 入出力結果
-
+```
 input the filename of sample heights ?:../sample/heights.csv
 the filename of sample heigths: ../sample/heights.csv
 input the filename of sample ID ?:../sample/IDs.csv
@@ -27,6 +27,9 @@ Which ID's date do you want?:45313125
 ID:45313125
 gender:Female
 heights:152.40
+```
+
+```
 input the filename of sample heights ?:../sample/heights.csv
 the filename of sample heigths: ../sample/heights.csv
 input the filename of sample ID ?:../sample/IDs.csv
@@ -34,6 +37,8 @@ the filename of sample ID: ../sample/IDs.csv
 Which ID's date do you want?:71240081
 ---
 No Date
-
+```
 ## 修正履歴
 
+[comment #20200811 sonoda]
+- OK
